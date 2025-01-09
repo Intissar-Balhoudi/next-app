@@ -47,8 +47,8 @@ const ViewUser = () => {
                                     <td>{user.user_email}</td>
                                     <td>{user.user_mobile}</td>
                                     <td>
-                                        <button onClick={() => trash(user._id)} className='btn btn-danger mx-2'><i class="fa-solid fa-trash"></i></button>
-                                        <Link href={`/editUser/${user._id}`} className="btn btn-warning"><i class="fa-solid fa-pen"></i></Link>
+                                        <button onClick={() => trash(user._id)} className='btn btn-danger mx-2'><i className="fa-solid fa-trash"></i></button>
+                                        <Link href={`/editUser/${user._id}`} className="btn btn-warning"><i className="fa-solid fa-pen"></i></Link>
                                     </td>
                                 </tr>
                             ))

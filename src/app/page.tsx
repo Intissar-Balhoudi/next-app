@@ -1,9 +1,9 @@
- import styles from "./page.module.css";
-import AddUser from "./AddUser/page";
+
+import AddUser from "./addUser/page";
 
 export default function Home() {
   return (
-    <div className={styles.page}>
+    <div >
        <AddUser/>
     </div>
   );
