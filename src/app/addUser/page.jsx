@@ -20,8 +20,9 @@ const AddUser = () => {
     };
     return (
         <>
-            <div className="col-lg-6 mx-auto my-5 p-5 shadow mt-5"  >
+            <div className="col-lg-6 mx-auto my-5 p-5 shadow mt-5" style={{    marginTop: "10rem !important" }}>
                 <form action="" method="post" onSubmit={handleSubmit(signup)}>
+                    <h1 className='text-center'>Add User</h1>
                     <div className="mt-4">
                         <input type="text" {...register('user_name')} placeholder='enter user name' className='form-control' />
                     </div>
