@@ -1,0 +1,79 @@
+<!-- <!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vérification d'Égalité</title>
+</head>
+<body>
+    <h1>Vérification de l'égalité (valeur et type)</h1>
+    <form id="equalityForm">
+        <label for="valueA">Valeur A :</label>
+        <input type="text" id="valueA" required><br><br>
+        <label for="valueB">Valeur B :</label>
+        <input type="text" id="valueB" required><br><br>
+        <button type="submit">Tester</button>
+    </form>
+    <p id="result"></p>
+
+    <script >
+// Gestionnaire d'événement pour le formulaire
+document.getElementById("equalityForm").onsubmit = function (event) {
+    event.preventDefault(); // Empêche le rechargement de la page
+
+    // Récupération des valeurs saisies
+    const valueA = document.getElementById("valueA").value;
+    const valueB = document.getElementById("valueB").value;
+
+    // Vérification de l'égalité stricte (type et valeur)
+    const isEqual = valueA === valueB;
+
+    // Affichage du résultat
+    document.getElementById("result").textContent = isEqual 
+        ? "Résultat : TRUE - Les valeurs et les types sont égaux." 
+        : "Résultat : FALSE - Les valeurs ou les types sont différents.";
+};
+
+
+
+    </script>
+</body>
+</html>
+ -->
+ <!DOCTYPE html>
+ <html lang="fr">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Vérification d'Égalité</title>
+ </head>
+ <body>
+     <h1>Vérification de l'égalité (valeur et type)</h1>
+     <label for="valueA">Valeur A :</label>
+     <input type="text" id="valueA"><br><br>
+     <label for="valueB">Valeur B :</label>
+     <input type="text" id="valueB"><br><br>
+     <button onclick="checkEquality()">Tester</button>
+     <p id="result"></p>
+ 
+     <script>
+         function checkEquality() {
+             const valueA = document.getElementById("valueA").value;
+             const valueB = document.getElementById("valueB").value;
+ 
+             let resultMessage;
+ 
+             // Vérification de l'égalité stricte (type et valeur)
+             if (valueA === valueB) {
+                 resultMessage = "Résultat : TRUE - Les valeurs et les types sont égaux.";
+             } else {
+                 resultMessage = "Résultat : FALSE - Les valeurs ou les types sont différents.";
+             }
+ 
+             // Affichage du résultat
+             document.getElementById("result").textContent = resultMessage;
+         }
+     </script>
+ </body>
+ </html>
+ 
